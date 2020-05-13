@@ -1,0 +1,11 @@
+body	{background: orange}
+
+li	{border: 2px red solid;}
+
+/*# id selector*/
+#special {background: yellow}
+
+/*. class selector*/
+.completed {
+	text-decoration: line-through;
+}

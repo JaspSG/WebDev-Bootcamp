@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Form Exercise
+	</title>
+</head>
+
+<body>
+
+<h1>Register</h1>
+
+	<form>
+	
+
+<div>
+
+<!-- 'for' in label and 'id' must match -->
+
+<label for ="firstName">First Name:</label>
+<input id="firstName" name="firstName" type="text" placeholder="John" required="True">
+
+<label for ="lastName">First Name:</label>
+<input id="lastName" name="lastName" type="text" placeholder="Smith" required="True">
+</div>
+
+<div>
+	<label for="Male">Male</label>
+	<input id="Male" type="radio" name="gender", value="male">
+
+	<label for="Female">Female</label>
+	<input id="Female" type="radio" name="gender", value="female">
+
+	<label for="Others">Others</label>
+	<input id="Others" type="radio" name="gender", value="others">
+
+
+
+</div>
+
+<div>
+	
+	<!-- Alternative way for label -->
+	<label for="email">Email: </label>
+	<input type="email" name="email" placeholder="your email" required="True">
+
+	<label for="password">Password:</label>
+	<input type="password" name="password" placeholder="password" required="True">
+</div>
+
+<div>
+
+	<!-- Nested options in label -->
+	<label>
+		Birthday:
+	<select name="Month">
+		<option>Jan</option>
+		<option>Feb</option>
+		<option>Mar</option>
+	</select>
+
+	<select name="Day">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+
+	<select name="Year">
+		<option>2000</option>
+		<option>2001</option>
+		<option>2003</option>
+	</select>
+	<label>
+</div>
+
+<div>
+	<label for="tnc">I agree to the terms and conditions</label>
+	<input type="checkbox" name="tnc", id="tnc">
+</div>
+
+
+
+
+<input type="Submit" value="Send">
+	
+	</form>
+</body>
+</html>

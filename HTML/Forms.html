@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+<!--  Action -- URL to send the form data--> 
+<!--  Method -- what HTTP method (get/post)-->
+
+<!-- 
+Forms:
+Default action: Same location as form
+Default Method : Get request.
+ -->
+
+<form action="https://en.wikipedia.org/wiki/Main_Page" method="get">
+
+<!-- Basic input
+<input name="Username" type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+<input type="Submit">
+ -->
+
+<!-- <label>
+	Username:
+	<input name="Username" type="text" placeholder="Username">
+</label>
+ -->
+
+<!-- Alternative label Syntax with ID, better practice for screen reading software (disabled users) -->
+
+<label for ="Username">Username:</label>
+<input id="Username" name="Username" type="text" placeholder="Username" required="True">
+
+<label for="email">Email:</label>
+<input id="email" name="email" type="email" placeholder="email" required="True">
+
+
+<label for="password">password:</label>
+<input id="password" name="password" type="password" placeholder="password" required="True">
+
+<input type="Submit">
+
+</form>
+
+</body>
+</html>

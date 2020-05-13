@@ -1,0 +1,27 @@
+h1 {
+	color: #54206E;
+	/*border-color: purple;
+	border-width: 10px;
+	border-style: solid;*/
+
+	border: purple 10px dashed;
+	}
+
+/*border has 3 different parts:
+width
+color
+style*/
+
+h2 {color: rgb(0,255,28);}
+
+/* a= transparency*/
+h3 {color: rgba(150,100,230,0.5);}
+
+h4 {
+	background: #542222;
+}
+
+/*body {background: pink;}*/
+body {
+	background: url(http://blog.hostbaby.com/wp-content/uploads/2014/03/Trees_1400x900.png);
+}
