@@ -1,18 +1,3 @@
-scorekeepr : basic event listeners
-todo : adding event listeners with forloop and "this" keyword
-
-
-
-
-
-
-
-
-
-
-
-
-
 document Methods: returns a list, hence can be used with indexing
 
 document.getElementById()
@@ -36,3 +21,6 @@ setAttribute()
 srcset - changing src
 
 addEventListener(type,functiontocall)
+
+scorekeepr : basic event listeners
+todo : adding event listeners with forloop and "this" keyword
