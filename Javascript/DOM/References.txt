@@ -1,0 +1,38 @@
+scorekeepr : basic event listeners
+todo : adding event listeners with forloop and "this" keyword
+
+
+
+
+
+
+
+
+
+
+
+
+
+document Methods: returns a list, hence can be used with indexing
+
+document.getElementById()
+document.getElementsByClassName()
+document.getElementByTagName()
+document.querySelector() - select the CSS way, returns first
+document.querySelectorAll() - returns all
+
+classList: A read only list that contains all the classes for a given element.
+classlist.add()
+classlist.remove()
+classlist.toggle()
+
+.textContent - treats content as text, meaning it does not render tags like <h1>
+.innerHTML - keeps nested tags like <strong> etc.
+
+changing attributes of links like href , src, etc. etc.
+getAttribute()
+setAttribute()
+
+srcset - changing src
+
+addEventListener(type,functiontocall)
