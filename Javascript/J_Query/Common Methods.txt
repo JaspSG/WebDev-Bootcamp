@@ -1,0 +1,10 @@
+
+
+
+val()
+text()
+attr()
+html()
+addClass()
+removeClass()
+toggleClass()
