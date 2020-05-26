@@ -12,24 +12,34 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" href="assets/css/patatap.css" />
     <script
       type="text/javascript"
-      src="assets/js/lib/jquery-3.5.1.min.js"
+      src="assets/js/lib/paperjs-v0.12.7/dist/paper-full.js"
     ></script>
-    <link rel="stylesheet" href="assets/css/patatap.css" />
+
+    <script type="text/paperscript" canvas="myCanvas">
+
+      var circles = [];
+
+      function onKeyDown(event) {
+          var maxPoint = new Point(view.size.width, view.size.height);
+          var randomPoint = Point.random();
+          var point = maxPoint * randomPoint;
+          var newCircle = new Path.Circle(point,50);
+          newCircle.fillColor = "orange";
+          circles.push(newCircle);
+      }
+
+      function onFrame(event) {
+        for(var i=0; i<circles.length; i++){
+                  circles[i].fillColor.hue += 1;
+                  circles[i].scale(.9);
+              }
+          }
+    </script>
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
-    <script type="text/javascript" src="assets/js/patatap.js"></script>
-    <script
-      type="text/javascript"
-      src="assets/js/lib/paperjs-v0.12.7/dist/paper-full.min.js"
-    ></script>
+    <canvas id="myCanvas" resize></canvas>
   </body>
 </html>
