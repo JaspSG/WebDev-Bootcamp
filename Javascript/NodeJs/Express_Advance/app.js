@@ -1,14 +1,17 @@
 var express = require("express");
 var app = express();
 
+app.use(express.static("public")); //folder for css files
+app.set("view engine", "ejs"); //tells express to expect ejs files, thus not required to write .ejs extension
+
 //request & response
 app.get("/", function (req, res) {
-  res.render("home.ejs");
+  res.render("home");
 });
 
 app.get("/fallinlovewith/:thing", function (req, res) {
   var thing = req.params.thing;
-  res.render("love.ejs", { thingVar: thing }); //passing arguments to ejs file
+  res.render("love", { thingVar: thing }); //passing arguments to ejs file
 });
 
 app.get("/posts", function (req, res) {
@@ -18,7 +21,7 @@ app.get("/posts", function (req, res) {
     { title: "Garb", author: "age" },
   ];
 
-  res.render("posts.ejs", { posts: posts });
+  res.render("posts", { posts: posts }); //line 5 allows us to write "posts" instead of "posts.ejs"
 });
 
 app.get("*", function (req, res) {
