@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+
+    <h1>You love this: <%= thingVar.toUpperCase() %></h1>
+
+        <!-- Wrap every single line of javascript in <% %> Syntax -->
+        <% if (thingVar.toLowerCase() ==="rusty" ) { %>
+            <p>GOOD CHOICE! Rusty is the Best!</p>
+            <%} else { %>
+                <p>Bad Choice</p>
+                <% } %>
+                    <%-include('partials/footer')%>
